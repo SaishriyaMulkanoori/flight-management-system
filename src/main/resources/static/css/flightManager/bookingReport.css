@@ -1,0 +1,149 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #DBE2E9;
+	color: #333;
+}
+
+h1 {
+	text-align: center;
+	color: #2c3e50;
+	margin: 20px 0;
+	font-size: 2rem;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin:auto;
+}
+
+button.search-button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.search-button:hover {
+    background-color: #0056b3;
+}
+
+button.search-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight:bold;
+}
+
+select {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    font-weight:bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px
+}
+
+.status-cancelled {
+    color: red;
+    font-weight: bold;
+}
+
+.status-confirmed {
+    color: green;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .logo-img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    nav a:hover {
+        color: #ddd;
+    }
+
+@media ( max-width : 768px) {
+	.flight-card {
+		flex-direction: column;
+	}
+	.flight-card .details, .flight-card .actions {
+		flex: 1 1 100%;
+		align-items: center;
+		text-align: center;
+	}
+}

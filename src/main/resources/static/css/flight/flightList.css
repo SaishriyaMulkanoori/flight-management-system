@@ -1,0 +1,137 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #DBE2E9;
+	color: #333;
+}
+
+h1 {
+	text-align: center;
+	color: #2c3e50;
+	margin: 20px 0;
+	font-size: 2rem;
+}
+
+.container {
+	width: 70%;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.cancel-button {
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 7px 10px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 3px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+.complete-button {
+   background-color: green;
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 7px 10px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 3px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+.add-button {
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 10px 15px;
+	background-color: #3498db;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 8px;
+	text-align: center;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+.flight-list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.flight-card {
+	background: #ffffff;
+	padding: 15px 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.flight-card h3 {
+	margin: 0;
+	font-size: 1.2rem;
+	color: #2c3e50;
+}
+
+.flight-card .details {
+	flex: 1 1 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.flight-card .details p {
+	margin: 0;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.flight-card .actions {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 5px;
+}
+
+.flight-card .actions a {
+	display: inline-block;
+	padding: 8px 12px;
+	font-size: 0.8rem;
+	color: white;
+	border-radius: 6px;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.flight-card .actions a.edit {
+	background-color: #f39c12;
+}
+
+.flight-card .actions a.edit:hover {
+	background-color: #e67e22;
+}
+
+.flight-card .actions a.delete {
+	background-color: #e74c3c;
+}
+
+.flight-card .actions a.delete:hover {
+	background-color: #c0392b;
+}
+
+@media ( max-width : 768px) {
+	.flight-card {
+		flex-direction: column;
+	}
+	.flight-card .details, .flight-card .actions {
+		flex: 1 1 100%;
+		align-items: center;
+		text-align: center;
+	}
+}
